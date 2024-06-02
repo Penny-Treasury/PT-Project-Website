@@ -1,5 +1,6 @@
 import { extendTheme, type ThemeConfig, type Colors } from '@chakra-ui/react';
 import { theme } from '@chakra-ui/pro-theme';
+import stepperTheme from './themes/stepper';
 
 const proTheme = extendTheme(theme);
 
@@ -30,8 +31,13 @@ const themeColors: Colors = {
   },
 };
 
-const pennyTreasuryTheme = extendTheme(
+let pennyTreasuryTheme = extendTheme(
   { ...themeConfig, ...themeColors },
+  {
+    components: {
+      Stepper: stepperTheme
+    }
+  },
   proTheme
 );
 

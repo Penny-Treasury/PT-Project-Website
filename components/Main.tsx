@@ -6,6 +6,7 @@ import { LogoGrid } from './logo_grid/LogoGrid';
 import { Stats } from './stats/Stats';
 import { Info } from './Info';
 import { Team } from './team/Team';
+import { Roadmap } from './Roadmap';
 
 export const Main = (props: FlexProps) => {
   return (
@@ -15,6 +16,7 @@ export const Main = (props: FlexProps) => {
         <LogoGrid />
         <Info />
         <Stats />
+        <Roadmap />
         <Team />
       </Container>
     </Flex>
